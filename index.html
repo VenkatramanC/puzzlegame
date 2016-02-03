@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Puzzle game</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://bootswatch.com/cosmo">
   <script src="jquery-1.11.3.js"></script>
   <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="assets/javascripts/puzzle.js"></script>
@@ -14,61 +14,67 @@
 </head>
 
 <body>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">The Puzzle Game</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="" id="newgame" class= "btn-btn-primary">New Game</a></li>
+            <li><a href=""id="reload" class="link">Reload</a></li>
+            <li><a href="#" id="submit">Submit</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <section id="home">
     <div class="container-fluid">
-      <div class="row">
-        <h1>The Challenging Puzzle</h1>
-        <div class="container">
-          <div class="row menu">
-            <div class="col-xs-2">
-              <button type="button" id="newgame" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                New game
-              </button>
-            </div>
-            <div class="col-xs-6">  </div>
-            <div class="col-xs-2">
-            <button type="button" id="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                submit
-              </button>
-            </div>
-           
-
-            </div>
-            
-            <div class="row puzzle">
-              <div class="col-md-12 sortable" id="layout">
-                <div class="col-md-4 pow" id="a1">
-                  <img src="assets/images/puzzle/1.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a2">
-                  <img src="assets/images/puzzle/2.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a3">
-                  <img src="assets/images/puzzle/3.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a4">
-                  <img src="assets/images/puzzle/4.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a5">
-                  <img src="assets/images/puzzle/5.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a6">
-                  <img src="assets/images/puzzle/6.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a7">
-                  <img src="assets/images/puzzle/7.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a8">
-                  <img src="assets/images/puzzle/8.jpg" class="picture">
-                </div>
-                <div class="col-md-4 pow" id="a9">
-                  <img src="assets/images/puzzle/9.jpg" class="picture">
-                </div>
+      <div class="container">
+        <div class="row">  
+          <div class="row puzzle">
+            <div class="col-md-12 sortable" id="layout">
+              <div class="col-md-4 pow" id="a1">
+                <img src="assets/images/puzzle/1.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a2">
+                <img src="assets/images/puzzle/2.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a3">
+                <img src="assets/images/puzzle/3.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a4">
+                <img src="assets/images/puzzle/4.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a5">
+                <img src="assets/images/puzzle/5.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a6">
+                <img src="assets/images/puzzle/6.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a7">
+                <img src="assets/images/puzzle/7.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a8">
+                <img src="assets/images/puzzle/8.jpg" class="picture">
+              </div>
+              <div class="col-md-4 pow" id="a9">
+                <img src="assets/images/puzzle/9.jpg" class="picture">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </body>
-   </html>
+    </div>
+  </div>
+</section>
+</body>
+</html>
